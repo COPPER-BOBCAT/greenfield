@@ -5,6 +5,7 @@ angular.module('pledgr', [
   'pledgr.signup',
   'pledgr.signin',
   'pledgr.register',
+  'pledgr.creditcard',
   'ui.router'
 ])
 .config(function($stateProvider, $urlRouterProvider) {
@@ -36,6 +37,11 @@ angular.module('pledgr', [
        url: '/charities/{c1:[0-9]+}/{c2:[0-9]+}/{c3:[0-9]+}',
        templateUrl: 'app/charities/charities.html',
        controller: 'CharitiesController'
+    })
+    .state('creditcard', {
+       url: '/manageCards',
+       templateUrl: 'app/creditcard/creditcard.html',
+       controller: 'CreditCardController'
     });
 
     // $httpProvider.interceptors.push('AttachTokens');
