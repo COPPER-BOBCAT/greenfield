@@ -251,7 +251,7 @@ header.main-header{
 
 }
 
-  #signup-page h2{
+  #signup-page h2, .view-container h2{
     margin: 1.5em 0 .5em;
   }
 

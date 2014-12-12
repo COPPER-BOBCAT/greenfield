@@ -1,10 +1,10 @@
-<div id="signup-page" class="view-container">
+<div class="view-container">
   <div>
     <h2>Account Settings</h2>
   </div>
   <div>
     <form name="signupForm" ng-submit="submit()" novalidate>
-      <fieldset class="nameContainer form-section">
+      <fieldset class="nameContainer form-section active">
         <!-- firstname input form -->
         <label for="firstName">Name</label>
         <input type="text" name="firstName" ng-model="user.first" ng-minlength="2" ng-maxlength="15" required>
